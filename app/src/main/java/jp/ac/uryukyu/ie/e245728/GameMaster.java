@@ -8,5 +8,8 @@ public class GameMaster {
 
     public void gameStart(){
         System.out.println("ゲームスタート！");
+
+        MainMenu sm = new MainMenu();
+        sm.showMenu();
     }
 }
