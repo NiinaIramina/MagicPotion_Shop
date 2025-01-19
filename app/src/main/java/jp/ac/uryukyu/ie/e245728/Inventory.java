@@ -28,6 +28,7 @@ public class Inventory {
 
     //在庫・売上・所持金を表示する
     public void CheckInventory() {
+        System.out.println("");
         System.out.println("在庫・売上・所持金を表示します");
         System.out.println("在庫");
 

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class MainMenu {
 
-    public void showMenu(Inventory ci, Buy bp){
+    public void showMenu(Inventory ci, Buy bp ,Potion mp){
         Scanner scan = new Scanner(System.in);
 
         while (true) {
@@ -21,10 +21,10 @@ public class MainMenu {
                 ci.CheckInventory();
             }
             else if (choose_num == 2){
-                bp.purchase();
+                bp.purchase(ci);
             }
             else if (choose_num == 3){
-                
+                mp.makePotion();
             }
             else if (choose_num == 4){
                 System.out.println("ゲームを終了します。");

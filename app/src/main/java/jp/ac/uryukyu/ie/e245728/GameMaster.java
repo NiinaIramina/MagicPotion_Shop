@@ -13,9 +13,10 @@ public class GameMaster {
         MainMenu sm = new MainMenu();
         Inventory ci = new Inventory();
         Buy bp = new Buy();
+        Potion mp = new Potion();
 
 
 
-        sm.showMenu(ci, bp);
+        sm.showMenu(ci, bp, mp);
     }
 }
