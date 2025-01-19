@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Inventory {
     Map<String, Integer> ingredients;
-    int sales; //売上
-    int funds; //所持金
+    private int sales; //売上
+    private int funds; //所持金
 
     Inventory (){
         this.ingredients = new HashMap<>();
@@ -45,6 +45,29 @@ public class Inventory {
         sales += 1;
     }
 
+    public void record(int money){
+        sales += money;
+        funds += money; //同じクラス内で使う時はsetter,getterはいらない。
+    }
+
+    public void payment(int money){
+        funds -= money;
+    }
+
+    public boolean judgeGameClear(){ //目標金額に達した時
+        //sales >= 3000;
+
+        
+        if (sales >= 1){
+            return true;
+        } else {
+            return false;
+        }
+
+        //return sales >= 3000;
+
+
+    }
 
     //在庫を表示するメソッド
 

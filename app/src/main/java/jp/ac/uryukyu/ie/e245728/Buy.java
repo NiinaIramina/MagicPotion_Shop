@@ -39,6 +39,7 @@ public class Buy {
                 System.out.println("購入する前は、" + ci.ingredients.get("スライムのジェル") + "個だった！");
                 ci.ingredients.put("スライムのジェル", ci.ingredients.get("スライムのジェル")+1);
                 System.out.println("購入後は" + ci.ingredients.get("スライムのジェル") + "個になった！");
+                ci.payment(1);//スライムの値段
 
                 //ci.ingredients.put("スライムのジェル", 0=+1);これは間違った書き方だよ
 

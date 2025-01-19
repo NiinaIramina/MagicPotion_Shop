@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Potion {
 
-    public void makePotion(){
+    public void makePotion(Inventory ci){
         Scanner scan = new Scanner(System.in);
 
         System.out.println("");
@@ -55,8 +55,23 @@ public class Potion {
                 continue; //while文の一番下に行ってまた上から再開する
             }
 
+            //在庫を減らすコード
+            if (base_num == 1){
+                ci.ingredients.put("スライムのジェル", ci.ingredients.get("スライムのジェル")-1);
+            }
+            
+            if (core_num == 4){
+                ci.ingredients.put("ドラゴンの尻尾", ci.ingredients.get("ドラゴンの尻尾")-1);
+            }
+
+            if (accent_num == 7){
+                ci.ingredients.put("マンドラゴラ", ci.ingredients.get("マンドラゴラ")-1);
+            }
+
+            //魔法薬の結果
             if (base_num == 1 && core_num == 4 && accent_num == 7){
                 System.out.println("パワーゼリー ができた！");
+                ci.record(120);
             }
             else {
                 System.out.println("微妙なポーションができた…");
