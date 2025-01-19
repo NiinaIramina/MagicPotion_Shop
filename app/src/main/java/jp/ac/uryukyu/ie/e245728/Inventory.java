@@ -40,6 +40,9 @@ public class Inventory {
     }
 
     //売上を更新するメソッド
+    public void a() {
+        sales += 1;
+    }
 
 
     //在庫を表示するメソッド

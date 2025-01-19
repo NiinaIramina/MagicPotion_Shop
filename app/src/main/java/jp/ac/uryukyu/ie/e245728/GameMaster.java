@@ -9,7 +9,13 @@ public class GameMaster {
     public void gameStart(){
         System.out.println("ゲームスタート！");
 
+        //インスタンス生成エリア
         MainMenu sm = new MainMenu();
-        sm.showMenu();
+        Inventory ci = new Inventory();
+        Buy bp = new Buy();
+
+
+
+        sm.showMenu(ci, bp);
     }
 }
