@@ -51,8 +51,6 @@ public class Buy {
             }
             else if (item_num == 2){
                 System.out.println("聖水を購入した！");
-
-                System.out.println("聖水を購入した！");
                 System.out.println("購入する前は、" + ci.ingredients.get("聖水") + "個だった！");
                 ci.ingredients.put("聖水", ci.ingredients.get("聖水")+1);
                 System.out.println("購入後は" + ci.ingredients.get("聖水") + "個になった！");
@@ -67,7 +65,6 @@ public class Buy {
                 ci.payment(5); // すごい酒の値段
             }
             else if (item_num == 4){
-                System.out.println("ドラゴンの尻尾を購入した！");
                 System.out.println("ドラゴンの尻尾を購入した！");
                 System.out.println("購入する前は、" + ci.ingredients.get("ドラゴンの尻尾") + "個だった！");
                 ci.ingredients.put("ドラゴンの尻尾", ci.ingredients.get("ドラゴンの尻尾")+1);
