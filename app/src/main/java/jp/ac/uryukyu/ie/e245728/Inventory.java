@@ -71,6 +71,14 @@ public class Inventory {
 
     }
 
+    public int getSales(){
+        return this.sales;
+    }
+
+    public int getFunds(){
+        return this.funds;
+    }
+
     //在庫を表示するメソッド
 
     //所持金を表示するメソッド
