@@ -56,16 +56,14 @@ public class Inventory {
 
     public boolean judgeGameClear(){ //目標金額に達した時
         //sales >= 3000;
-
-        
-        if (sales >= 1){
+  
+        if (sales >= 1000){ //目標金額の設定
             return true;
         } else {
             return false;
         }
 
         //return sales >= 3000;
-
 
     }
 

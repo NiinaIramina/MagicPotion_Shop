@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Potion {
 
     public void makePotion(Inventory ci){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);//scan閉じてないよ！という警告だが、scan.close()しちゃうとエラーが出ちゃうのでこのまま！
 
         System.out.println("");
         System.out.println("魔女：これから魔法薬を作っていくよ！");
