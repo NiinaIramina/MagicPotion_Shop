@@ -15,15 +15,16 @@ public class Buy {
             System.out.println("");
             System.out.println("欲しいものを選んでください");
             System.out.println("売り物一覧");
-            System.out.println("1.スライムのジェル");
-            System.out.println("2.聖水");
-            System.out.println("3.すごい酒");
-            System.out.println("4.ドラゴンの尻尾");
-            System.out.println("5.薬草");
-            System.out.println("6.魔獣の角");
-            System.out.println("7.マンドラゴラ");
-            System.out.println("8.毒キノコ");
-            System.out.println("9.ターボイナゴ");
+            System.out.println("Base：1〜3, Core：4〜6, Accent：7〜9");
+            System.out.println("1.スライムのジェル / 1G");
+            System.out.println("2.聖水 / 7G");
+            System.out.println("3.すごい酒 / 5G");
+            System.out.println("4.ドラゴンの尻尾 / 9G");
+            System.out.println("5.薬草 / 3G");
+            System.out.println("6.魔獣の角 / 8G");
+            System.out.println("7.マンドラゴラ / 6G");
+            System.out.println("8.毒キノコ / 2G");
+            System.out.println("9.ターボイナゴ /4G");
             System.out.println("10.購入を終了する");
 
             int item_num = scan.nextInt();
@@ -110,7 +111,8 @@ public class Buy {
             }
             else if (item_num == 10){
                 System.out.println("購入を終了します。");
-                System.out.println( "店主：おう、また来いよな。");
+                System.out.println("");
+                System.out.println( "店主：もっといい物揃えておく。次はもっと買っていけよ。");
                 //scan.close();
                 break;
             }

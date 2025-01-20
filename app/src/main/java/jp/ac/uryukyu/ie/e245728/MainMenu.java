@@ -8,6 +8,8 @@ public class MainMenu {
 
         while (true) {
             System.out.println("");
+            System.out.println("遊び方はREADMEを参照してね！");
+            System.out.println("------------------");
             System.out.println("メインメニュー画面です。");
             System.out.println("やりたいことを選んでください。");
             System.out.println("1.在庫・売上・所持金の確認");
