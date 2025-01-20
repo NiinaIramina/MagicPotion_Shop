@@ -1,6 +1,5 @@
 package jp.ac.uryukyu.ie.e245728;
-
-import java.util.Map;
+//import java.util.Map;
 import java.util.Scanner;
 
 public class Buy {

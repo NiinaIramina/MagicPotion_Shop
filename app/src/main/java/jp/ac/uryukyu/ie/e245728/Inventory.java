@@ -37,6 +37,7 @@ public class Inventory {
             System.out.println(entry.getKey() + "：" + entry.getValue());
         }
         System.out.println("");
+        System.out.println("目標売上金額は 3000 です"); //売上目標金額
         System.out.println("売上：" + sales);
         System.out.println("");
         System.out.println("所持金：" + funds);
