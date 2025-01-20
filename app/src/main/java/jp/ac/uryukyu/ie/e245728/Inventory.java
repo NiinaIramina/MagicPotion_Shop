@@ -30,12 +30,15 @@ public class Inventory {
     public void CheckInventory() {
         System.out.println("");
         System.out.println("在庫・売上・所持金を表示します");
+        System.out.println("");
         System.out.println("在庫");
 
         for(Map.Entry<String, Integer> entry : ingredients.entrySet()){
             System.out.println(entry.getKey() + "：" + entry.getValue());
         }
+        System.out.println("");
         System.out.println("売上：" + sales);
+        System.out.println("");
         System.out.println("所持金：" + funds);
 
     }
@@ -45,19 +48,19 @@ public class Inventory {
         sales += 1;
     }
 
-    public void record(int money){
+    public void record(int money){ //収入を得る
         sales += money;
         funds += money; //同じクラス内で使う時はsetter,getterはいらない。
     }
 
-    public void payment(int money){
+    public void payment(int money){ //支出
         funds -= money;
     }
 
     public boolean judgeGameClear(){ //目標金額に達した時
         //sales >= 3000;
   
-        if (sales >= 1000){ //目標金額の設定
+        if (sales >= 3000){ //目標金額の設定
             return true;
         } else {
             return false;

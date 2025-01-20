@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Buy {
 
     public void purchase (Inventory ci){
-        Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);//scan閉じてないよ！という警告だが、scan.close()しちゃうとエラーが出ちゃうのでこのまま！
 
         System.out.println("");
         System.out.println("店主：何を買うんだ？冷やかしなら帰ってくれよ。");
@@ -111,6 +111,7 @@ public class Buy {
             }
             else if (item_num == 10){
                 System.out.println("購入を終了します。");
+                System.out.println( "店主：おう、また来いよな。");
                 //scan.close();
                 break;
             }
