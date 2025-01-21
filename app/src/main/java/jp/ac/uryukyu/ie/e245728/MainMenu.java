@@ -1,8 +1,20 @@
 package jp.ac.uryukyu.ie.e245728;
 import java.util.Scanner;
 
+/**
+ * ゲームのメインメニュー画面を表示するクラスです。
+ * プレイヤーはここでやりたいことを選択し、在庫確認、材料購入、魔法薬作成、ゲーム終了などの操作を行います。
+ */
 public class MainMenu {
 
+    /**
+     * メインメニューを表示し、プレイヤーにやりたいことを選ばせるメソッドです。
+     * プレイヤーが選んだオプションに応じて、在庫確認、材料購入、魔法薬作成、ゲーム終了の各処理を呼び出します。
+     * 
+     * @param ci Inventoryクラスのインスタンス。プレイヤーの在庫や所持金を管理します。
+     * @param bp Buyクラスのインスタンス。材料の購入処理を担当します。
+     * @param mp Potionクラスのインスタンス。魔法薬の作成処理を担当します。
+     */
     public void showMenu(Inventory ci, Buy bp ,Potion mp){
         Scanner scan = new Scanner(System.in);
 

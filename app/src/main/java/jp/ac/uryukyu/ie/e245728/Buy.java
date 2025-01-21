@@ -2,8 +2,19 @@ package jp.ac.uryukyu.ie.e245728;
 //import java.util.Map;
 import java.util.Scanner;
 
+/**
+ * プレイヤーが材料を購入するためのクラス。
+ */
+
 public class Buy {
 
+
+    /**
+     * プレイヤーが材料を購入するプロセスを管理するメソッド。
+     * 材料のリストを表示し、プレイヤーが選んだ材料を購入し、所持金を更新する。
+     * 
+     * @param ci プレイヤーの在庫と所持金を管理するInventoryクラスのインスタンス
+     */
     public void purchase (Inventory ci){
         Scanner scan = new Scanner(System.in);//scan閉じてないよ！という警告だが、scan.close()しちゃうとエラーが出ちゃうのでこのまま！
 
@@ -12,8 +23,7 @@ public class Buy {
 
         while (true) {
 
-            System.out.println("");
-            System.out.println("欲しいものを選んでください");
+            System.out.println("\n欲しいものを選んでください");
             System.out.println("売り物一覧");
             System.out.println("Base：1〜3, Core：4〜6, Accent：7〜9");
             System.out.println("1.スライムのジェル / 1G");

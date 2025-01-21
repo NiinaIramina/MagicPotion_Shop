@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Potion {
 
+    /**
+     * 魔法薬を作成するメソッドです。
+     * プレイヤーは3つの材料（Base、Core、Accent）を順番に選び、結果としてポーションが生成されます。
+     * 
+     * @param ci プレイヤーの在庫と所持金を管理するInventoryクラスのインスタンス
+     */
     public void makePotion(Inventory ci){
         Scanner scan = new Scanner(System.in);//scan閉じてないよ！という警告だが、scan.close()しちゃうとエラーが出ちゃうのでこのまま！
 
@@ -65,6 +71,14 @@ public class Potion {
                 continue; //while文の一番下に行ってまた上から再開する
             }
 
+            /**
+             * 選択された材料に基づいて在庫を更新します。
+             * 
+             * @param ci プレイヤーの在庫情報。
+             * @param base_num Base材料の番号。
+             * @param core_num Core材料の番号。
+             * @param accent_num Accent材料の番号。
+             */
             //在庫を減らすコード
             if (base_num == 1){
                 ci.ingredients.put("スライムのジェル", ci.ingredients.get("スライムのジェル")-1);
@@ -102,6 +116,14 @@ public class Potion {
                 ci.ingredients.put("ターボイナゴ", ci.ingredients.get("ターボイナゴ")-1);
             }
 
+            /**
+             * 選択された材料に基づいて作成されたポーションの結果を表示します。
+             * 
+             * @param ci プレイヤーの在庫情報。
+             * @param base_num Base材料の番号。
+             * @param core_num Core材料の番号。
+             * @param accent_num Accent材料の番号。
+             */
             //魔法薬の結果
             if (base_num == 1 && core_num == 4 && accent_num == 7){
                 System.out.println("");
